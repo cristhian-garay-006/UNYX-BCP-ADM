@@ -1,12 +1,13 @@
 :root {
-    --bg-dark: #f4f5f7;
-    --bg-card: #ffffff;
-    --brand-main: #f59e0b;
-    --brand-light: #fbbf24;
-    --brand-dark: #0f2b4c;
-    --text-main: #2c3e50;
-    --text-dim: #5c6a79;
-    --border-color: #d1d8e0;
+    --bg-dark: #050505;
+    --bg-card: #111114;
+    --brand-main: #6366f1; /* Indigo */
+    --brand-light: #0ea5e9; /* Cyan */
+    --brand-purple: #a855f7; /* Purple */
+    --brand-dark: #1e1b4b;
+    --text-main: #f8fafc;
+    --text-dim: #94a3b8;
+    --border-color: #27272a;
 }
 
 * {
@@ -93,9 +94,9 @@ p { margin-bottom: 1.5rem; color: var(--text-dim); line-height: 1.5; }
 }
 
 .btn:hover { 
-    background-color: #d68910; 
+    background-color: #4f46e5; 
     transform: translateY(-2px);
-    box-shadow: 0 6px 15px rgba(230, 126, 34, 0.25);
+    box-shadow: 0 6px 15px rgba(99, 102, 241, 0.25);
 }
 .btn:active {
     transform: translateY(0);
@@ -112,7 +113,7 @@ p { margin-bottom: 1.5rem; color: var(--text-dim); line-height: 1.5; }
     background-color: var(--brand-main); 
     color: white; 
     transform: translateY(-2px);
-    box-shadow: 0 6px 15px rgba(230, 126, 34, 0.2);
+    box-shadow: 0 6px 15px rgba(99, 102, 241, 0.2);
 }
 .btn-outline:active {
     transform: translateY(0);
@@ -137,7 +138,7 @@ input, select, textarea {
     width: 100%;
     padding: 12px;
     border-radius: 8px;
-    background-color: #ffffff;
+    background-color: var(--bg-card);
     border: 1px solid var(--border-color);
     color: var(--text-main);
     font-size: 1rem;
@@ -147,7 +148,7 @@ input, select, textarea {
 input:focus, textarea:focus {
     outline: none;
     border-color: var(--brand-main);
-    box-shadow: 0 0 0 3px rgba(230, 126, 34, 0.15);
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
 }
 
 /* Grid para tarjetas */
@@ -164,7 +165,7 @@ input:focus, textarea:focus {
 .hover-card:hover {
     transform: translateY(-5px);
     border-color: var(--brand-main);
-    box-shadow: 0 4px 15px rgba(230,126,34,0.1);
+    box-shadow: 0 4px 15px rgba(99, 102, 241,0.1);
 }
 
 .badge {
@@ -261,9 +262,9 @@ th, td { padding: 1rem; text-align: left; border-bottom: 1px solid var(--border-
 }
 
 @keyframes pulse {
-    0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(230, 126, 34, 0.4); }
-    50% { transform: scale(1.05); box-shadow: 0 0 0 12px rgba(230, 126, 34, 0); }
-    100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(230, 126, 34, 0); }
+    0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.4); }
+    50% { transform: scale(1.05); box-shadow: 0 0 0 12px rgba(99, 102, 241, 0); }
+    100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(99, 102, 241, 0); }
 }
 
 @keyframes gradientShift {
@@ -307,7 +308,7 @@ th, td { padding: 1rem; text-align: left; border-bottom: 1px solid var(--border-
 .inicio-main {
     flex: 1;
     position: relative;
-    background-color: #f8fafc;
+    background-color: var(--bg-dark);
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -321,7 +322,7 @@ th, td { padding: 1rem; text-align: left; border-bottom: 1px solid var(--border-
     left: -10%;
     width: 600px;
     height: 600px;
-    background: radial-gradient(circle, rgba(203,213,225,0.4) 0%, rgba(248,250,252,0) 70%);
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, rgba(0,0,0,0) 70%);
     border-radius: 50%;
     z-index: 0;
 }
@@ -380,7 +381,7 @@ th, td { padding: 1rem; text-align: left; border-bottom: 1px solid var(--border-
 }
 .inicio-subtitle {
     font-size: 1.25rem;
-    color: #64748b;
+    color: var(--text-dim);
     margin-bottom: 3.5rem;
 }
 
@@ -409,7 +410,7 @@ th, td { padding: 1rem; text-align: left; border-bottom: 1px solid var(--border-
 }
 .feature-text p {
     font-size: 0.85rem;
-    color: #64748b;
+    color: var(--text-dim);
     margin: 0;
     line-height: 1.4;
 }
@@ -429,9 +430,9 @@ th, td { padding: 1rem; text-align: left; border-bottom: 1px solid var(--border-
     color: white;
 }
 .btn-dark:hover {
-    background-color: #081a2d;
+    background-color: #312e81;
     transform: translateY(-2px);
-    box-shadow: 0 6px 15px rgba(15, 43, 76, 0.25);
+    box-shadow: 0 6px 15px rgba(49, 46, 129, 0.25);
 }
 .btn-outline-dark {
     background-color: transparent;
@@ -439,9 +440,9 @@ th, td { padding: 1rem; text-align: left; border-bottom: 1px solid var(--border-
     color: var(--brand-dark);
 }
 .btn-outline-dark:hover {
-    background-color: #f1f5f9;
+    background-color: #1e1b4b;
     transform: translateY(-2px);
-    box-shadow: 0 6px 15px rgba(15, 43, 76, 0.1);
+    box-shadow: 0 6px 15px rgba(49, 46, 129, 0.1);
 }
 
 .seguridad-text {
@@ -458,8 +459,8 @@ th, td { padding: 1rem; text-align: left; border-bottom: 1px solid var(--border-
     padding: 1.5rem;
     font-size: 0.85rem;
     color: #94a3b8;
-    background-color: #f8fafc;
-    border-top: 1px solid #e2e8f0;
+    background-color: var(--bg-dark);
+    border-top: 1px solid var(--border-color);
 }
 
 /* ---- INPUTS CON ICONOS ---- */
@@ -488,7 +489,7 @@ th, td { padding: 1rem; text-align: left; border-bottom: 1px solid var(--border-
     width: 100%;
     border: 1px solid var(--border-color);
     border-radius: 8px;
-    background-color: white;
+    background-color: var(--bg-card);
 }
 .input-icon-wrapper textarea {
     padding-top: 12px;
@@ -523,7 +524,7 @@ th, td { padding: 1rem; text-align: left; border-bottom: 1px solid var(--border-
     font-size: 0.85rem;
     color: var(--text-dim);
     transition: all 0.2s;
-    background: white;
+    background: var(--bg-card);
     user-select: none;
 }
 .chip-checkbox:hover span {
@@ -534,7 +535,7 @@ th, td { padding: 1rem; text-align: left; border-bottom: 1px solid var(--border-
     background-color: var(--brand-dark);
     color: white;
     border-color: var(--brand-dark);
-    box-shadow: 0 4px 10px rgba(15, 43, 76, 0.2);
+    box-shadow: 0 4px 10px rgba(49, 46, 129, 0.2);
 }
 
 /* ---- RESPONSIVE LANDING PAGE ---- */

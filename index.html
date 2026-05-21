@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[NOMBRE DE LA APP] - Plataforma de Talento</title>
+    <title>UNYX - Plataforma de Talento</title>
     <meta name="description"
         content="Plataforma donde estudiantes demuestran habilidades blandas mediante retos y las empresas encuentran talento por desempeño real.">
     <link rel="stylesheet" href="css/styles.css">
@@ -16,19 +16,8 @@
     <div id="pantalla-inicio" class="pantalla" style="display: flex; flex-direction: column; padding: 0;">
         <header class="inicio-header">
             <div class="logo-text">
-                <svg width="28" height="28" viewBox="0 0 100 100" fill="none" stroke-width="14" stroke-linecap="round"
-                    stroke-linejoin="round">
-                    <defs>
-                        <clipPath id="clip-bottom-header">
-                            <rect x="0" y="50" width="100" height="50" />
-                        </clipPath>
-                    </defs>
-                    <path d="M 60 20 L 30 35 L 30 65 L 60 80" stroke="var(--brand-main)" />
-                    <path d="M 40 80 L 70 65 L 70 35 L 40 20" stroke="#ffffff" />
-                    <path d="M 60 20 L 30 35 L 30 65 L 60 80" stroke="var(--brand-main)"
-                        clip-path="url(#clip-bottom-header)" />
-                </svg>
-                <span>NOMBRE DE LA APP</span>
+                <img src="logo_app.jpeg" alt="UNYX Logo" width="28" height="28" style="border-radius: 6px; object-fit: cover;">
+                <span>UNYX</span>
             </div>
             <button class="btn-text-white" onclick="mostrarPantalla('pantalla-login-empresa')">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -55,21 +44,9 @@
 
             <div class="inicio-content">
                 <div class="logo-large">
-                    <svg width="100" height="100" viewBox="0 0 100 100" fill="none" stroke-width="14"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <defs>
-                            <clipPath id="clip-bottom-main">
-                                <rect x="0" y="50" width="100" height="50" />
-                            </clipPath>
-                        </defs>
-                        <path d="M 60 20 L 30 35 L 30 65 L 60 80" stroke="var(--brand-dark)" />
-                        <path d="M 40 80 L 70 65 L 70 35 L 40 20" stroke="var(--brand-main)" />
-                        <path d="M 60 20 L 30 35 L 30 65 L 60 80" stroke="var(--brand-dark)"
-                            clip-path="url(#clip-bottom-main)" />
-                    </svg>
+                    <img src="logo_app.jpeg" alt="UNYX Logo" width="120" height="120" style="border-radius: 20px; box-shadow: 0 10px 30px rgba(99, 102, 241, 0.3); object-fit: cover;">
                 </div>
-
-                <h1 class="inicio-title">NOMBRE DE LA APP</h1>
+                <h1 class="inicio-title">UNYX</h1>
                 <div class="title-underline"></div>
                 <p class="inicio-subtitle">"No necesitas experiencia para demostrar talento."</p>
 
@@ -137,7 +114,7 @@
         </main>
 
         <footer class="inicio-footer">
-            © 2024 Nombre de la App. Todos los derechos reservados.
+            © 2024 UNYX. Todos los derechos reservados.
         </footer>
     </div>
 
@@ -145,19 +122,8 @@
     <div id="pantalla-registro" class="pantalla" style="display: none; flex-direction: column; padding: 0;">
         <header class="inicio-header">
             <div class="logo-text">
-                <svg width="28" height="28" viewBox="0 0 100 100" fill="none" stroke-width="14" stroke-linecap="round"
-                    stroke-linejoin="round">
-                    <defs>
-                        <clipPath id="clip-bottom-header-reg">
-                            <rect x="0" y="50" width="100" height="50" />
-                        </clipPath>
-                    </defs>
-                    <path d="M 60 20 L 30 35 L 30 65 L 60 80" stroke="var(--brand-main)" />
-                    <path d="M 40 80 L 70 65 L 70 35 L 40 20" stroke="#ffffff" />
-                    <path d="M 60 20 L 30 35 L 30 65 L 60 80" stroke="var(--brand-main)"
-                        clip-path="url(#clip-bottom-header-reg)" />
-                </svg>
-                <span>NOMBRE DE LA APP</span>
+                <img src="logo_app.jpeg" alt="UNYX Logo" width="28" height="28" style="border-radius: 6px; object-fit: cover;">
+                <span>UNYX</span>
             </div>
             <button class="btn-text-white" onclick="mostrarPantalla('pantalla-inicio')">
                 Volver
@@ -342,7 +308,7 @@
                             <div class="form-group">
                                 <label>Habilidades destacadas (elige hasta 4)</label>
                                 <div class="card"
-                                    style="padding: 1.5rem; background-color: #f8fafc; border: 1px solid var(--border-color); box-shadow: none;">
+                                    style="padding: 1.5rem; background-color: var(--bg-card); border: 1px solid var(--border-color); box-shadow: none;">
                                     <div id="checkboxes-habilidades" style="display:flex; flex-wrap:wrap; gap:10px;">
                                         <label class="chip-checkbox"><input type="checkbox"
                                                 value="Liderazgo"><span>Liderazgo</span></label>
@@ -367,13 +333,13 @@
                             <div class="form-group">
                                 <label>Idiomas</label>
                                 <div id="bloque-idiomas" class="card"
-                                    style="padding: 1.5rem; background-color: #f8fafc; border: 1px solid var(--border-color); box-shadow: none; margin-bottom: 1rem;">
+                                    style="padding: 1.5rem; background-color: var(--bg-card); border: 1px solid var(--border-color); box-shadow: none; margin-bottom: 1rem;">
                                     <div
                                         style="display:flex; flex-wrap:wrap; gap:12px; align-items:center; margin-bottom:8px;">
                                         <input type="text" placeholder="Idioma (ej: Inglés)"
                                             style="flex:1; min-width: 150px; padding:12px 14px; border-radius:8px; border:1px solid #d1d8e0; font-family: inherit;">
                                         <select
-                                            style="flex:1; min-width: 150px; padding:12px 14px; border-radius:8px; border:1px solid #d1d8e0; background-color: white; font-family: inherit;">
+                                            style="flex:1; min-width: 150px; padding:12px 14px; border-radius:8px; border:1px solid #d1d8e0; background-color: var(--bg-card); font-family: inherit;">
                                             <option>Básico</option>
                                             <option>Intermedio</option>
                                             <option>Avanzado</option>
@@ -413,19 +379,8 @@
     <div id="pantalla-categorias" class="pantalla" style="display: none; flex-direction: column; padding: 0;">
         <header class="inicio-header">
             <div class="logo-text">
-                <svg width="28" height="28" viewBox="0 0 100 100" fill="none" stroke-width="14" stroke-linecap="round"
-                    stroke-linejoin="round">
-                    <defs>
-                        <clipPath id="clip-bottom-header-cat">
-                            <rect x="0" y="50" width="100" height="50" />
-                        </clipPath>
-                    </defs>
-                    <path d="M 60 20 L 30 35 L 30 65 L 60 80" stroke="var(--brand-main)" />
-                    <path d="M 40 80 L 70 65 L 70 35 L 40 20" stroke="#ffffff" />
-                    <path d="M 60 20 L 30 35 L 30 65 L 60 80" stroke="var(--brand-main)"
-                        clip-path="url(#clip-bottom-header-cat)" />
-                </svg>
-                <span>NOMBRE DE LA APP</span>
+                <img src="logo_app.jpeg" alt="UNYX Logo" width="28" height="28" style="border-radius: 6px; object-fit: cover;">
+                <span>UNYX</span>
             </div>
             <button class="btn-text-white" onclick="cerrarSesion()"
                 style="display: flex; align-items: center; gap: 8px;">
@@ -598,19 +553,8 @@
     <div id="pantalla-retos" class="pantalla" style="display: none; flex-direction: column; padding: 0;">
         <header class="inicio-header">
             <div class="logo-text">
-                <svg width="28" height="28" viewBox="0 0 100 100" fill="none" stroke-width="14" stroke-linecap="round"
-                    stroke-linejoin="round">
-                    <defs>
-                        <clipPath id="clip-bottom-header-retos">
-                            <rect x="0" y="50" width="100" height="50" />
-                        </clipPath>
-                    </defs>
-                    <path d="M 60 20 L 30 35 L 30 65 L 60 80" stroke="var(--brand-main)" />
-                    <path d="M 40 80 L 70 65 L 70 35 L 40 20" stroke="#ffffff" />
-                    <path d="M 60 20 L 30 35 L 30 65 L 60 80" stroke="var(--brand-main)"
-                        clip-path="url(#clip-bottom-header-retos)" />
-                </svg>
-                <span>NOMBRE DE LA APP</span>
+                <img src="logo_app.jpeg" alt="UNYX Logo" width="28" height="28" style="border-radius: 6px; object-fit: cover;">
+                <span>UNYX</span>
             </div>
             <button class="btn-text-white" onclick="cerrarSesion()"
                 style="display: flex; align-items: center; gap: 8px;">
@@ -649,19 +593,8 @@
     <div id="pantalla-detalle-reto" class="pantalla" style="display: none; flex-direction: column; padding: 0;">
         <header class="inicio-header">
             <div class="logo-text">
-                <svg width="28" height="28" viewBox="0 0 100 100" fill="none" stroke-width="14" stroke-linecap="round"
-                    stroke-linejoin="round">
-                    <defs>
-                        <clipPath id="clip-bottom-header-detalle">
-                            <rect x="0" y="50" width="100" height="50" />
-                        </clipPath>
-                    </defs>
-                    <path d="M 60 20 L 30 35 L 30 65 L 60 80" stroke="var(--brand-main)" />
-                    <path d="M 40 80 L 70 65 L 70 35 L 40 20" stroke="#ffffff" />
-                    <path d="M 60 20 L 30 35 L 30 65 L 60 80" stroke="var(--brand-main)"
-                        clip-path="url(#clip-bottom-header-detalle)" />
-                </svg>
-                <span>NOMBRE DE LA APP</span>
+                <img src="logo_app.jpeg" alt="UNYX Logo" width="28" height="28" style="border-radius: 6px; object-fit: cover;">
+                <span>UNYX</span>
             </div>
             <button class="btn-text-white" onclick="cerrarSesion()"
                 style="display: flex; align-items: center; gap: 8px;">
@@ -695,7 +628,7 @@
                     </div>
                     
                     <p id="reto-escenario"
-                        style="color: var(--text-main); background: #f8fafc; border: 1px solid var(--border-color); padding: 1.5rem; border-radius: 8px; font-size: 1.05rem; line-height: 1.6;">
+                        style="color: var(--text-main); background: var(--bg-card); border: 1px solid var(--border-color); padding: 1.5rem; border-radius: 8px; font-size: 1.05rem; line-height: 1.6;">
                         Escenario del reto...
                     </p>
 
@@ -736,13 +669,8 @@
     <div id="pantalla-resultados" class="pantalla" style="display: none; flex-direction: column; padding: 0;">
         <header class="inicio-header">
             <div class="logo-text">
-                <svg width="28" height="28" viewBox="0 0 100 100" fill="none" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
-                    <defs><clipPath id="clip-bottom-header-res"><rect x="0" y="50" width="100" height="50" /></clipPath></defs>
-                    <path d="M 60 20 L 30 35 L 30 65 L 60 80" stroke="var(--brand-main)" />
-                    <path d="M 40 80 L 70 65 L 70 35 L 40 20" stroke="#ffffff" />
-                    <path d="M 60 20 L 30 35 L 30 65 L 60 80" stroke="var(--brand-main)" clip-path="url(#clip-bottom-header-res)" />
-                </svg>
-                <span>NOMBRE DE LA APP</span>
+                <img src="logo_app.jpeg" alt="UNYX Logo" width="28" height="28" style="border-radius: 6px; object-fit: cover;">
+                <span>UNYX</span>
             </div>
             <button class="btn-text-white" onclick="cerrarSesion()" style="display: flex; align-items: center; gap: 8px;">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -765,7 +693,7 @@
                     <h2 id="res-mensaje" style="font-size: 2rem; color: var(--brand-dark); margin-bottom: 0.5rem;">¡Reto completado!</h2>
                     <p style="color: var(--text-dim); margin-bottom: 2rem;">Has finalizado la prueba exitosamente.</p>
                     
-                    <div style="background: #f8fafc; border: 1px solid var(--border-color); border-radius: 12px; padding: 2rem; margin-bottom: 2rem;">
+                    <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 2rem; margin-bottom: 2rem;">
                         <p style="font-size: 0.9rem; color: var(--text-dim); font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">Puntaje Obtenido</p>
                         <div style="font-size: 4rem; font-weight: bold; color: var(--brand-main); line-height: 1;">
                             <span id="res-puntaje">0</span>
@@ -797,13 +725,8 @@
     <div id="pantalla-cv-usuario" class="pantalla" style="display: none; flex-direction: column; padding: 0;">
         <header class="inicio-header">
             <div class="logo-text">
-                <svg width="28" height="28" viewBox="0 0 100 100" fill="none" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
-                    <defs><clipPath id="clip-bottom-header-cvu"><rect x="0" y="50" width="100" height="50" /></clipPath></defs>
-                    <path d="M 60 20 L 30 35 L 30 65 L 60 80" stroke="var(--brand-main)" />
-                    <path d="M 40 80 L 70 65 L 70 35 L 40 20" stroke="#ffffff" />
-                    <path d="M 60 20 L 30 35 L 30 65 L 60 80" stroke="var(--brand-main)" clip-path="url(#clip-bottom-header-cvu)" />
-                </svg>
-                <span>NOMBRE DE LA APP</span>
+                <img src="logo_app.jpeg" alt="UNYX Logo" width="28" height="28" style="border-radius: 6px; object-fit: cover;">
+                <span>UNYX</span>
             </div>
             <button class="btn-text-white" onclick="cerrarSesion()" style="display: flex; align-items: center; gap: 8px;">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -835,7 +758,7 @@
                     </div>
                 </div>
 
-                <div class="card" style="background: white; color: #333; max-width: 900px; margin: 0 auto; padding: 0; overflow: hidden;">
+                <div class="card" style="background: var(--bg-card); color: var(--text-main); max-width: 900px; margin: 0 auto; padding: 0; overflow: hidden;">
             <div style="display: flex; flex-wrap: wrap;">
                 <!-- COLUMNA IZQUIERDA -->
                 <div style="flex: 2; min-width: 280px; padding: 2rem;">
@@ -849,7 +772,7 @@
                             </div>
                         </div>
                         <div>
-                            <h1 id="cv-nombre" style="margin:0; font-size:26px; color:#222;"></h1>
+                            <h1 id="cv-nombre" style="margin:0; font-size:26px; color: var(--text-main);"></h1>
                             <p id="cv-carrera"
                                 style="margin:4px 0 0; color:var(--brand-main); font-size:15px; font-weight:600;"></p>
                             <span id="cv-rango-badge"
@@ -861,47 +784,47 @@
                         <h2
                             style="color:var(--brand-main); border-bottom:2px solid var(--brand-main); padding-bottom:4px; font-size:16px;">
                             Descripción personal</h2>
-                        <p id="cv-descripcion" style="font-size:14px; line-height:1.7; color:#555;"></p>
+                        <p id="cv-descripcion" style="font-size:14px; line-height:1.7; color: var(--text-dim);"></p>
                     </div>
                     <!-- Retos completados -->
                     <div style="margin-bottom:20px;">
                         <h2
                             style="color:var(--brand-main); border-bottom:2px solid var(--brand-main); padding-bottom:4px; font-size:16px;">
                             Retos completados</h2>
-                        <div id="cv-retos" style="font-size:14px; line-height:1.8; color:#444;"></div>
+                        <div id="cv-retos" style="font-size:14px; line-height:1.8; color: var(--text-main);"></div>
                     </div>
                     <!-- Habilidades demostradas -->
                     <div style="margin-bottom:20px;">
                         <h2
                             style="color:var(--brand-main); border-bottom:2px solid var(--brand-main); padding-bottom:4px; font-size:16px;">
                             Habilidades demostradas</h2>
-                        <div id="cv-habilidades-resultado" style="font-size:14px; color:#444;"></div>
+                        <div id="cv-habilidades-resultado" style="font-size:14px; color: var(--text-main);"></div>
                     </div>
                 </div>
                 <!-- COLUMNA DERECHA -->
                 <div
-                    style="flex: 1; min-width: 220px; background: #fafafa; padding: 2rem; border-left: 1px solid #eee;">
+                    style="flex: 1; min-width: 220px; background: var(--bg-dark); padding: 2rem; border-left: 1px solid var(--border-color);">
                     <!-- Contacto -->
-                    <div style="background:#fff3e0; border-radius:12px; padding:16px; margin-bottom:16px;">
+                    <div style="background: rgba(99, 102, 241, 0.05); border-radius:12px; padding:16px; margin-bottom:16px;">
                         <h3 style="color:var(--brand-main); font-size:14px; margin-top:0;">Perfil</h3>
-                        <p style="font-size:13px; margin:4px 0; color:#555;"><strong>Email:</strong> <span
+                        <p style="font-size:13px; margin:4px 0; color: var(--text-dim);"><strong>Email:</strong> <span
                                 id="cv-correo"></span></p>
-                        <p style="font-size:13px; margin:4px 0; color:#555;"><strong>Teléfono:</strong> <span
+                        <p style="font-size:13px; margin:4px 0; color: var(--text-dim);"><strong>Teléfono:</strong> <span
                                 id="cv-telefono"></span></p>
-                        <p style="font-size:13px; margin:4px 0; color:#555;"><strong>LinkedIn:</strong> <span
+                        <p style="font-size:13px; margin:4px 0; color: var(--text-dim);"><strong>LinkedIn:</strong> <span
                                 id="cv-linkedin"></span></p>
-                        <p style="font-size:13px; margin:4px 0; color:#555;"><strong>Dirección:</strong> <span
+                        <p style="font-size:13px; margin:4px 0; color: var(--text-dim);"><strong>Dirección:</strong> <span
                                 id="cv-direccion"></span></p>
                     </div>
                     <!-- Habilidades seleccionadas -->
-                    <div style="background:#fff3e0; border-radius:12px; padding:16px; margin-bottom:16px;">
+                    <div style="background: rgba(99, 102, 241, 0.05); border-radius:12px; padding:16px; margin-bottom:16px;">
                         <h3 style="color:var(--brand-main); font-size:14px; margin-top:0;">Habilidades</h3>
-                        <div id="cv-habilidades-lista" style="font-size:13px; line-height:2; color:#555;"></div>
+                        <div id="cv-habilidades-lista" style="font-size:13px; line-height:2; color: var(--text-dim);"></div>
                     </div>
                     <!-- Idiomas -->
-                    <div style="background:#fff3e0; border-radius:12px; padding:16px; margin-bottom:16px;">
+                    <div style="background: rgba(99, 102, 241, 0.05); border-radius:12px; padding:16px; margin-bottom:16px;">
                         <h3 style="color:var(--brand-main); font-size:14px; margin-top:0;">Idiomas</h3>
-                        <div id="cv-idiomas" style="font-size:13px; line-height:2; color:#555;"></div>
+                        <div id="cv-idiomas" style="font-size:13px; line-height:2; color: var(--text-dim);"></div>
                     </div>
                     <!-- Puntaje -->
                     <div
@@ -922,19 +845,8 @@
     <div id="pantalla-login-empresa" class="pantalla" style="display: none; flex-direction: column; padding: 0;">
         <header class="inicio-header">
             <div class="logo-text">
-                <svg width="28" height="28" viewBox="0 0 100 100" fill="none" stroke-width="14" stroke-linecap="round"
-                    stroke-linejoin="round">
-                    <defs>
-                        <clipPath id="clip-bottom-header-emp">
-                            <rect x="0" y="50" width="100" height="50" />
-                        </clipPath>
-                    </defs>
-                    <path d="M 60 20 L 30 35 L 30 65 L 60 80" stroke="var(--brand-main)" />
-                    <path d="M 40 80 L 70 65 L 70 35 L 40 20" stroke="#ffffff" />
-                    <path d="M 60 20 L 30 35 L 30 65 L 60 80" stroke="var(--brand-main)"
-                        clip-path="url(#clip-bottom-header-emp)" />
-                </svg>
-                <span>NOMBRE DE LA APP</span>
+                <img src="logo_app.jpeg" alt="UNYX Logo" width="28" height="28" style="border-radius: 6px; object-fit: cover;">
+                <span>UNYX</span>
             </div>
             <button class="btn-text-white" onclick="mostrarPantalla('pantalla-inicio')">
                 Volver
@@ -999,19 +911,8 @@
     <div id="pantalla-empresa" class="pantalla" style="display: none; flex-direction: column; padding: 0;">
         <header class="inicio-header">
             <div class="logo-text">
-                <svg width="28" height="28" viewBox="0 0 100 100" fill="none" stroke-width="14" stroke-linecap="round"
-                    stroke-linejoin="round">
-                    <defs>
-                        <clipPath id="clip-bottom-header-panel">
-                            <rect x="0" y="50" width="100" height="50" />
-                        </clipPath>
-                    </defs>
-                    <path d="M 60 20 L 30 35 L 30 65 L 60 80" stroke="var(--brand-main)" />
-                    <path d="M 40 80 L 70 65 L 70 35 L 40 20" stroke="#ffffff" />
-                    <path d="M 60 20 L 30 35 L 30 65 L 60 80" stroke="var(--brand-main)"
-                        clip-path="url(#clip-bottom-header-panel)" />
-                </svg>
-                <span>NOMBRE DE LA APP</span>
+                <img src="logo_app.jpeg" alt="UNYX Logo" width="28" height="28" style="border-radius: 6px; object-fit: cover;">
+                <span>UNYX</span>
             </div>
             <div class="btn-text-white" style="cursor: default;">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -1068,7 +969,7 @@
                             <line x1="17" y1="16" x2="23" y2="16"></line>
                         </svg>
                         <select
-                            style="width: 100%; border: 1px solid var(--border-color); border-radius: 8px; padding: 12px 14px 12px 44px; background: white; font-family: inherit; font-size: 0.95rem; color: var(--text-main); appearance: none; cursor: pointer;">
+                            style="width: 100%; border: 1px solid var(--border-color); border-radius: 8px; padding: 12px 14px 12px 44px; background: var(--bg-card); font-family: inherit; font-size: 0.95rem; color: var(--text-main); appearance: none; cursor: pointer;">
                             <option>Todos los rangos</option>
                             <option>Oro</option>
                             <option>Plata</option>
@@ -1086,7 +987,7 @@
                             <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
                         </svg>
                         <select
-                            style="width: 100%; border: 1px solid var(--border-color); border-radius: 8px; padding: 12px 14px 12px 44px; background: white; font-family: inherit; font-size: 0.95rem; color: var(--text-main); appearance: none; cursor: pointer;">
+                            style="width: 100%; border: 1px solid var(--border-color); border-radius: 8px; padding: 12px 14px 12px 44px; background: var(--bg-card); font-family: inherit; font-size: 0.95rem; color: var(--text-main); appearance: none; cursor: pointer;">
                             <option>Administración</option>
                         </select>
                         <svg class="icon-right" width="16" height="16" viewBox="0 0 24 24" fill="none"
@@ -1098,7 +999,7 @@
 
                 <div class="card" style="padding: 0; overflow: hidden; width: 100%;">
                     <div style="overflow-x: auto;">
-                        <table style="width: 100%; border-collapse: collapse; background: white; min-width: 700px;">
+                        <table style="width: 100%; border-collapse: collapse; background: var(--bg-card); min-width: 700px;">
                             <thead>
                                 <tr style="border-bottom: 1px solid var(--border-color);">
                                     <th
@@ -1142,13 +1043,8 @@
     <div id="pantalla-cv-empresa" class="pantalla" style="display: none; flex-direction: column; padding: 0;">
         <header class="inicio-header">
             <div class="logo-text">
-                <svg width="28" height="28" viewBox="0 0 100 100" fill="none" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
-                    <defs><clipPath id="clip-bottom-header-cve"><rect x="0" y="50" width="100" height="50" /></clipPath></defs>
-                    <path d="M 60 20 L 30 35 L 30 65 L 60 80" stroke="var(--brand-main)" />
-                    <path d="M 40 80 L 70 65 L 70 35 L 40 20" stroke="#ffffff" />
-                    <path d="M 60 20 L 30 35 L 30 65 L 60 80" stroke="var(--brand-main)" clip-path="url(#clip-bottom-header-cve)" />
-                </svg>
-                <span>NOMBRE DE LA APP</span>
+                <img src="logo_app.jpeg" alt="UNYX Logo" width="28" height="28" style="border-radius: 6px; object-fit: cover;">
+                <span>UNYX</span>
             </div>
             <div style="color: white; font-size: 0.9rem; display: flex; align-items: center;">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 4px;"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
@@ -1178,11 +1074,11 @@
                     </div>
                 </div>
 
-                <div class="card" style="background: white; color: black; max-width: 800px; margin: 0 auto; text-align: left;">
+                <div class="card" style="background: var(--bg-card); color: var(--text-main); max-width: 800px; margin: 0 auto; text-align: left;">
                     <div
-                style="display: flex; justify-content: space-between; border-bottom: 2px solid #eee; padding-bottom: 1rem; margin-bottom: 1.5rem;">
+                style="display: flex; justify-content: space-between; border-bottom: 2px solid var(--border-color); padding-bottom: 1rem; margin-bottom: 1.5rem;">
                 <div>
-                    <h1 id="cve-nombre" style="color: #333; margin-bottom: 0.2rem;">NOMBRE</h1>
+                    <h1 id="cve-nombre" style="color: var(--text-main); margin-bottom: 0.2rem;">NOMBRE</h1>
                     <p id="cve-carrera" style="color: var(--brand-main); font-weight: bold; margin-bottom: 0;">CARRERA
                     </p>
                     <p id="cve-correo" style="font-size: 0.9rem;">correo</p>
@@ -1190,14 +1086,14 @@
                 <div style="text-align: right;">
                     <span id="cve-badge" class="badge" style="font-size: 1rem; padding: 6px 16px;">RANGO</span>
                     <div style="margin-top: 0.5rem;">
-                        <span style="font-size: 0.8rem; color: #666;">PUNTAJE GLOBAL</span>
+                        <span style="font-size: 0.8rem; color: var(--text-dim);">PUNTAJE GLOBAL</span>
                         <div id="cve-puntaje" style="font-size: 1.5rem; font-weight: bold; color: var(--brand-main);">0
                         </div>
                     </div>
                 </div>
             </div>
 
-            <p style="font-style: italic; color: #555; background: #f9f9f9; padding: 10px; border-left: 3px solid var(--brand-main); margin-bottom: 1rem;"
+            <p style="font-style: italic; color: var(--text-dim); background: #f9f9f9; padding: 10px; border-left: 3px solid var(--brand-main); margin-bottom: 1rem;"
                 id="cve-recomendacion">
                 Recomendación del sistema...
             </p>
@@ -1206,7 +1102,7 @@
                 <div style="flex: 1;">
                     <h3 style="color: var(--brand-main); font-size: 1rem; text-transform: uppercase;">Retos Completados
                     </h3>
-                    <ul id="cve-retos" style="padding-left: 1.2rem; font-size: 0.9rem; color: #444; line-height: 1.6;">
+                    <ul id="cve-retos" style="padding-left: 1.2rem; font-size: 0.9rem; color: var(--text-main); line-height: 1.6;">
                         <!-- Dinámico -->
                     </ul>
                 </div>
